@@ -41,13 +41,12 @@ public class Main {
         double total = basicRental + optionsCost + underageCharge;
 
         //output
-        System.out.printf("Basic car rental price for %d days: $%.2f%n", days, basicRental);
+        System.out.printf("Basic car rental price from %s for %d days: $%.2f%n", pickUpDate, days, basicRental);
         System.out.printf("Options charge: $%.2f%n", optionsCost);
         System.out.printf("Underage driver surcharge: $%.2f%n", underageCharge);
         System.out.printf("TOTAL: $%.2f%n", total);
 
     }
-
     //parameter
     public static String readLine(Scanner in, String condition) {
         System.out.println(condition);
